@@ -1,6 +1,7 @@
 import React from 'react'
-import {StyleSheet, View, Text, TouchableHighlight} from 'react-native'
-import GradientButton from './GradientButton'
+import {View, Text, TouchableHighlight} from 'react-native'
+import GradientButton from '../GradientButton'
+import styles from './styles'
 
 export default class Buttons extends React.Component {
   state = {
@@ -41,28 +42,3 @@ export default class Buttons extends React.Component {
   }
 }
 
-const borderColor = '#979797'
-const textColor = '#2B3857'
-const styles = StyleSheet.create({
-  container: {
-    marginTop: 50
-  },
-  buttonContainer: {
-    flexDirection: 'row', 
-    justifyContent: 'space-between', 
-    marginTop: 10
-  },
-  button: {
-    width: 105,
-    alignItems:'center',
-    justifyContent:'center',
-    height: 55,
-    borderColor: borderColor,
-    borderWidth: 1,
-    borderRadius: 100
-  },
-  buttonText: {
-    color: '#673CFF',
-    fontSize: 14,
-  }
-})
